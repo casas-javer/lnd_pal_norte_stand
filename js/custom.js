@@ -102,6 +102,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
 
 
   if (nombreUsuario && nombreUsuario === valoruser) {
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
@@ -117,6 +118,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
   } 
 
    else if (nombre.val() === "" || correo.val() === "") {
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
@@ -130,6 +132,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
       )
     );
   } else if (longitud > 70 || longitud <= 3) {
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
@@ -143,6 +146,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
       )
     );
   } else if (longitudCorreo > 30 || longitudCorreo <= 6) {
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
@@ -158,6 +162,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
   }
 
   else if (!emailRegex.test(email)){
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
@@ -173,6 +178,7 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
   }
 
   else if (selectedIndex == 0) {
+    e.preventDefault();
     $("html, body").animate({
       scrollTop: 0
     }, 100);
