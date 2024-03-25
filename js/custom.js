@@ -96,8 +96,7 @@ const email = emailInput.value.trim(); // Get the email value and trim whitespac
 fechaExpiracion.setDate(fechaExpiracion.getDate() + 30); // Agregar 30 días a la fecha actual
 const cookieExpiracion = fechaExpiracion.toUTCString();
 
-  // Establece la cookie con el nombre del usuario
-  document.cookie = `nombreUsuario=${valoruser}; expires=${cookieExpiracion}`;
+
 
 
 
@@ -210,6 +209,9 @@ const cookieExpiracion = fechaExpiracion.toUTCString();
       )
     );
   } else {
+
+      // Establece la cookie con el nombre del usuario
+  document.cookie = `nombreUsuario=${valoruser}; expires=${cookieExpiracion}`;
 
     $('.show-section').submit(function() {
       console.log("Se envio el formulario")
